@@ -60,9 +60,9 @@ int main()
 	  A's destructor*/
 	
 	
-	A *d = new D(10); //COmpile time error
-	d->function1();
-	delete d;
+	//A *d = new D(10); //COmpile time error
+	//d->function1();
+	//delete d;
 
 	/*DiamondProblem.cpp:61 : 17 : error : ‘A’ is an ambiguous base of ‘D’
 		A *d = new D(10);*/
