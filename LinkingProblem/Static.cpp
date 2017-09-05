@@ -1,24 +1,27 @@
 #include<iostream>
 using namespace std;
 
-//class X
-//{
-//public:
-//	static int i; //Declaring i
-//	/*void function()
-//	{
-//		cout << i;
-//	}*/
-//};
-
-void function()
+class X
 {
-	extern int i;
-	cout << i;
-}
+public:
+	//static int i; //declaring i
+	static void function()
+	{
+		int i = 10;
+		cout << i;
+	}
+};
+
+//void function()
+//{
+//	//extern int i;
+//	cout << i;
+//}
 
 int main()
 {
-	function();
+	//X::function();
+	X x1 = new X();
+	x1.function();
 	return 0;
 }
